@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_03</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main_container">
+        <header>
+            <h1 id="main_title">Final Project</h1>
+            <div id="student_information">
+                <h2>Alberto Garcia</h2>
+                <h2>BCIT ID: A01338454</h2>
+            </div>
+        </header>
+        <main style="background-image: url('/images/Untitled1.png'); background-size: cover; background-position: center 0px;">
+            <h1>The Hangman Game</h1>
+            <div class="wrapper">
+                <p id="hint">Hint: <span></span></p>
+                <div id="wordContainer"></div>
+                <div id="letters" class="letters"></div>
+                <p>Incorrect attempts: <span id="wrongGuesses">0</span></p>
+            </div>
+        </main>
+        <footer>
+            <h1>COMP 2132 - Winter 2024</h1>
+        </footer>
+    </div>
+    <div id="gameOverPopup" class="popup-overlay" style="display: none;">
+        <div class="popup-content">
+            <p id="gameOverMessage"></p>
+            <button onclick="resetGame()">Play Again</button>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
